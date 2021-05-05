@@ -2,12 +2,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bootcamp-html
-  namespace: default
+  name: web2-html
 spec:
   selector:
     matchLabels:
-      app: bootcamp-html
+      app: web2-html
   replicas: 1
   strategy:
     type: RollingUpdate
@@ -17,10 +16,10 @@ spec:
   template:
     metadata:
       labels:
-        app: bootcamp-html
+        app: web2-html
     spec:
       containers:
-      - name: bootcamp-html
+      - name: web2-html
         image: sitemay/denemerepo:v$DOCKER_BUILD_NUMBER
         ports:
         - containerPort: 80
