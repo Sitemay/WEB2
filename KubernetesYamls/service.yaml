@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: bootcamp-html
+  name: web2-html
   namespace: default
 spec:
   selector:
-    app: bootcamp-html
+    app: web2-html
   type: NodePort
   ports:
   - name: http
