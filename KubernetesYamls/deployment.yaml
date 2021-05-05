@@ -21,6 +21,6 @@ spec:
     spec:
       containers:
       - name: bootcamp-html
-        image: sitemay/k8sdeploymentwithhelm:Jenkins-${BUILD_NUMBER}
+        image: sitemay/denemerepo:v$DOCKER_BUILD_NUMBER
         ports:
         - containerPort: 80
